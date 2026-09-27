@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+
+  /* Prevent iOS Safari / Android Chrome from zooming in when typing into input fields */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+    touch-action: manipulation;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Metallic horizontal shop shutter slats texture */
+.shutter-slats {
+  background: repeating-linear-gradient(
+    180deg,
+    #2c3e38 0px,
+    #3f564f 3px,
+    #1d2c27 7px,
+    #13201c 12px,
+    #0c1613 14px,
+    #22322c 16px
+  );
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.shutter-slat-highlight {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(0, 0, 0, 0.4);
+}

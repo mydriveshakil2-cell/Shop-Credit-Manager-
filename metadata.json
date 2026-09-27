@@ -1,0 +1,6 @@
+{
+  "name": "Shop Credit Master",
+  "description": "Modern UAE shop credit & khata management system with Emirates ID verification, carry-forward accounting, PDF statements, and WhatsApp alerts.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
